@@ -111,9 +111,10 @@ p {
     padding: 24px 0 24px 0;
 }
 
-h5 {
+.author p {
     font-size: var(--FONT-SIZE-14);
     font-weight: var(--FONT-WEIGHT-BOLD);
+    color: var(--BOX-SHADOW);
 }
 
 @media screen and (max-width: 375px){ 
