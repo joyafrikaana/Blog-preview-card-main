@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BG-COLOR: #F4D04E;
+    --BOX-SHADOW: #111111;
+    --SHADOW: #6B6B6B;
+    --MAIN-COLOR: #FFFFFF;
+    --FONT-SIZE-14: 14px;
+    --FONT-SIZE-24: 24px;
+    --FONT-SIZE-20: 20px;
+    --FONT-SIZE-16: 16px;
+    --FONT-WEIGHT-BOLD: 800;
+    --FONT-WEIGHT-MEDIUM: 600;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-color:var(--BG-COLOR);
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+} 
+
+
+.outer-container {
+    background-color: var(--BG-COLOR);
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    align-items: start;
+} 
+
+
+.container {
+    background-color: var(--MAIN-COLOR);
+    color: var(--BOX-SHADOW);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin: 20px;
+    padding: 24px;
+    border: 1px solid var(--BOX-SHADOW);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 0 var(--BOX-SHADOW);
+}
+
+.img-container{
+    width: 300px;
+}
+
+.main-img {
+    border-radius: 10px;
+    align-self: center;
+    width: 100%;
+}
+
+button {
+    width: 100px;
+    padding: 4px 12px 4px 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--BG-COLOR);
+    font-size: var(--FONT-SIZE-14);
+    font-weight: var(--FONT-WEIGHT-MEDIUM);
+}
+
+.btn {
+    color: var(--BOX-SHADOW);
+}
+
+.date {
+    font-size: var(--FONT-SIZE-14);
+    font-weight: var(--FONT-WEIGHT-MEDIUM);
+}
+
+h1 {
+    font-size: var(--FONT-SIZE-24);
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    margin: 12px 0 12px 0;
+}
+
+h1:hover, h1:active, h1:focus {
+    color: var(--BG-COLOR);
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    font-weight: var(--FONT-WEIGHT-MEDIUM);
+    color: var(--SHADOW);
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 24px 0 24px 0;
+}
+
+h5 {
+    font-size: var(--FONT-SIZE-14);
+    font-weight: var(--FONT-WEIGHT-BOLD);
+}
+
+@media screen and (max-width: 375px){ 
+.img-container {
+    width: 250px;
+}
+
+h1 {
+    font-size: var(--FONT-SIZE-20);
+}
+}
