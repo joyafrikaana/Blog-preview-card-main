@@ -22,13 +22,13 @@
 body {
     font-family: "Figtree", sans-serif;
     background-color:var(--BG-COLOR);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 section {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
 } 
 
